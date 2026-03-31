@@ -9,7 +9,7 @@ def get_uar_embedding(text):
     global luar_model, luar_tokenizer
     if luar_model is None:
         luar_model = torch.jit.load(
-            "LUAR.pth"
+            "models/LUAR.pth"
         )
     if luar_tokenizer is None:
         luar_tokenizer = AutoTokenizer.from_pretrained(

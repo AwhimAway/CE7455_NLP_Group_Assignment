@@ -3,7 +3,7 @@ import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 from mutual_implication_score import MIS
 from statistics import mean
-from styll_eval_metrics.uar import get_uar_embedding
+from .uar import get_uar_embedding
 import torch
 
 from tqdm import tqdm
@@ -136,6 +136,7 @@ def sim_score(texts, source_texts, alternative=False):
         return clean_fp_error(
             mean([s for s in mis_compute(source_texts, texts) if not math.isnan(s)])
         )
+
 
 
 def away_and_towards_score(

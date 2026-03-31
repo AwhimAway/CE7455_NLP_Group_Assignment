@@ -10,7 +10,7 @@ from tqdm import tqdm
 
 
 def choose_best(
-    original_text, target_text, transferred, embedding_type='uar', alternative_sim=False
+    original_text, target_text, transferred, embedding_type='uar', alternative_sim=True
 ):
     scores = []
     for i, text in enumerate(transferred):
@@ -28,7 +28,7 @@ def choose_best(
 
 
 @click.command()
-@click.option('--input_path', help='path to input jsonl file', required=True)
+@click.option('--input_path', default = "./results_LARGE/diverse/experiment/2026-03-31_15-32-43/results.jsonl",help='path to input jsonl file', required=True)
 @click.option('--do_rerank', is_flag=True)
 @click.option('--rerank_alt_sim', is_flag=True)
 @click.option(

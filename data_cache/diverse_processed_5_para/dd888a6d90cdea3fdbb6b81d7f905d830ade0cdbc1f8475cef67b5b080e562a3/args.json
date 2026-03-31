@@ -1,0 +1,1 @@
+{"data_path": "./data/styll_evaluation_data/diverse.json", "paraphraser_name": "tuner007/pegasus_paraphrase", "device": "cuda", "paraphraser_batch_size": 16, "paraphraser_args": {"num_return_sequences": 5, "top_p": 0.8, "temp": 1.5, "max_length_input": 60, "max_length_output": 60, "device": "cuda"}, "prepared_data": "data_cache/diverse_processed_5_para"}

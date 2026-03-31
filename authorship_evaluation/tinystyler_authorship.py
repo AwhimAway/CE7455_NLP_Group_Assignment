@@ -18,11 +18,8 @@ from tqdm import tqdm
 
 import pickle
 
-from transformers import (
-    PegasusForConditionalGeneration,
-    PegasusTokenizer,
-    AutoTokenizer,
-)
+from transformers import PegasusForConditionalGeneration, PegasusTokenizer, AutoTokenizer
+
 
 from tinystyler import TinyStyler, MODEL_TO_MODEL_TYPE, load_style_model, text_to_style
 
@@ -393,7 +390,7 @@ def perform_authorship_transfer(
 
 @click.command()
 @click.option('--styll_dataset_shard', default='diverse',type=str, required=True)
-@click.option('--model_checkpoint_path', default="../models/tinystyler/model_weights-001.pt", type=str, required=True)
+@click.option('--model_checkpoint_path', default="./models/tinystyler/model_weights-001.pt", type=str, required=True)
 @click.option('--output_dir', type=str, default='results_LARGE') #
 @click.option('--use_actual_input', type=bool, default=True)
 @click.option('--experiment_name', type=str, default='experiment')
