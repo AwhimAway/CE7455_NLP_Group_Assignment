@@ -59,11 +59,11 @@ def get_wegmann_embed(args, texts):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        '--input_path', type=str, required=True, help='Path to input file'
-    )
+        '--input_path', type=str, required=True, default ="./input_style", help='Path to input file'
+    ) #
     parser.add_argument(
-        '--target_path', type=str, required=True, help='Path to target style file'
-    )
+        '--target_path', type=str, required=True, default = "./target_styles", help='Path to target style file'
+    ) #
     parser.add_argument('--top_p', type=float, default=0.8, help='Top p value')
     parser.add_argument(
         '--temperature', type=float, default=1.0, help='Temperature value'
@@ -72,15 +72,15 @@ def main():
         '--basename', type=str, default='google/t5-v1_1-large', help='Base model name'
     )
     parser.add_argument(
-        '--model_path', type=str, required=True, help='Path to model checkpoint'
-    )
+        '--model_path', type=str, required=True, default="../models/tinystyler", help='Path to model checkpoint'
+    ) #
     parser.add_argument('--seed', type=int, default=4242, help='Seed value')
     parser.add_argument(
         '--num_inferences', type=int, default=1, help='Number of inferences'
     )
     parser.add_argument(
         '--out_dir', type=str, default='outputs', help='Output directory'
-    )
+    ) #
     parser.add_argument('--device', type=str, default='cuda', help='Device to use')
 
     args = parser.parse_args()

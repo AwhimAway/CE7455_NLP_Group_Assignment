@@ -392,10 +392,10 @@ def perform_authorship_transfer(
 
 
 @click.command()
-@click.option('--styll_dataset_shard', type=str, required=True)
-@click.option('--model_checkpoint_path', type=str, required=True)
-@click.option('--output_dir', type=str, default='results')
-@click.option('--use_actual_input', type=bool, default=False)
+@click.option('--styll_dataset_shard', default='diverse',type=str, required=True)
+@click.option('--model_checkpoint_path', default="../models/tinystyler/model_weights-001.pt", type=str, required=True)
+@click.option('--output_dir', type=str, default='results_LARGE') #
+@click.option('--use_actual_input', type=bool, default=True)
 @click.option('--experiment_name', type=str, default='experiment')
 def main(
     styll_dataset_shard,
@@ -428,7 +428,7 @@ def main(
             'out_dir': f'{output_dir}/{styll_dataset_shard}/{experiment_name}',
         },
         'data_args': {
-            'data_path': f"../data/styll_evaluation_data/{styll_dataset_shard}.json",
+            'data_path': f"./data/styll_evaluation_data/{styll_dataset_shard}.json",
             'paraphraser_name': 'tuner007/pegasus_paraphrase',
             'device': 'cuda',
             'paraphraser_batch_size': 16,

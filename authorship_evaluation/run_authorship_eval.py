@@ -5,7 +5,7 @@ import click
 import numpy as np
 
 sys.path.append('styll_eval_metrics/')
-from evaluation_metrics import joint_score
+from styll_eval_metrics.evaluation_metrics import joint_score
 from tqdm import tqdm
 
 

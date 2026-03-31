@@ -3,7 +3,7 @@ import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 from mutual_implication_score import MIS
 from statistics import mean
-from uar import get_uar_embedding
+from styll_eval_metrics.uar import get_uar_embedding
 import torch
 
 from tqdm import tqdm
