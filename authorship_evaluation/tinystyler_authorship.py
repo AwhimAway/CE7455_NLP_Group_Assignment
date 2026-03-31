@@ -389,7 +389,7 @@ def perform_authorship_transfer(
 
 
 @click.command()
-@click.option('--styll_dataset_shard', default='diverse',type=str, required=True)
+@click.option('--styll_dataset_shard', default='diverse' ,type=str, required=True)
 @click.option('--model_checkpoint_path', default="./models/tinystyler/model_weights-001.pt", type=str, required=True)
 @click.option('--output_dir', type=str, default='results_LARGE') #
 @click.option('--use_actual_input', type=bool, default=True)
