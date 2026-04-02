@@ -13,6 +13,8 @@ from transformers import T5ForConditionalGeneration
 # For model specific logic
 MODEL_TO_MODEL_TYPE = {
     'google/t5-v1_1-large': 't5',
+    't5-large': 't5',
+    't5-small': 't5-small',
 }
 
 
@@ -20,7 +22,7 @@ class TinyStyler(torch.nn.Module):
     def __init__(self, base_model, use_style=False, ctrl_embed_dim=768):
         super().__init__()
 
-        if MODEL_TO_MODEL_TYPE[base_model] == 't5':
+        if MODEL_TO_MODEL_TYPE[base_model] == 't5' or 't5-small':
             self.model = T5ForConditionalGeneration.from_pretrained(base_model)
         else:
             assert False
@@ -35,6 +37,10 @@ class TinyStyler(torch.nn.Module):
                 self.proj = torch.nn.Linear(
                     self.ctrl_embed_dim, self.model.config.hidden_size
                 )
+        print("Loaded base model:", base_model)
+        print("Model config:", self.model.config)
+        print("d_model:", self.model.config.d_model)
+        print("num_layers:", self.model.config.num_layers)
 
     def forward(self, input_ids, attention_mask, labels=None, style=None):
         if self.use_style:

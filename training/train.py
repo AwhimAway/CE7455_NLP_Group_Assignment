@@ -121,7 +121,7 @@ def run_model(*, batch, model, device, style_embed):
 @click.option('--learning_rate', type=float, default=1e-5)
 @click.option('--batch_size', type=int, default=64)
 @click.option('--accumulation_steps', type=int, default=1)
-@click.option('--out_dir', type=str, required=True, default="./output") #
+@click.option('--out_dir', type=str, required=True, default="./model_training_output") #
 @click.option('--device', type=str, default='cuda')
 @click.option('--warmup_steps', type=int, default=2000)
 @click.option('--max_steps', type=int, default=10000000)
@@ -129,8 +129,8 @@ def run_model(*, batch, model, device, style_embed):
 @click.option('--eval_freq', type=int, default=1000)
 @click.option('--ctrl_embed_dim', type=int, default=768)
 @click.option('--style_embed', type=str, default='style_embedding')
-@click.option('--model_name', type=str, default='google/t5-v1_1-large') # 
-@click.option('--data_file_path', type=str, required=True, default="./data") #
+@click.option('--model_name', type=str, default='t5-large') # 
+@click.option('--data_file_path', type=str, required=True, default="./data/RedditMUD/data.jsonl") #
 @click.option('--checkpoint', type=str, default=None)
 @click.option('--seed', type=int, default=42)
 @click.option('--max_encoder_len', type=int, default=80)

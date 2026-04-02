@@ -7,17 +7,18 @@ import os
 
 
 @click.command()
-@click.option('--path', type=str, required=True, help='path to jsonl file')
+@click.option('--path', type=str, required=True, default="./data/RedditMUD/data.jsonl", help='path to jsonl file')
 @click.option(
     '--protected_authors_path',
     type=str,
     required=True,
+    default="./data/styll_evaluation_data/protected_authors.txt",
     help='path to protected authors file',
 )
 @click.option('--train_split', type=float, default=0.90, help='train split')
 @click.option('--val_split', type=float, default=0.05, help='val split')
 @click.option('--test_split', type=float, default=0.05, help='test split')
-@click.option('--out_dir', type=str, required=True, help='path to text file')
+@click.option('--out_dir', type=str, default= "./processed_data_stage1" , required=True, help='path to text file')
 def main(path, protected_authors_path, train_split, val_split, test_split, out_dir):
     random.seed(42)
 

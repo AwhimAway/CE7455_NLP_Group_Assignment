@@ -39,8 +39,8 @@ def get_texts_by_author(authors, file_list):
 
 
 @click.command()
-@click.option('--in_dir', type=click.Path(exists=True))
-@click.option('--out_dir', type=click.Path())
+@click.option('--in_dir', type=click.Path(exists=True), default="./split_authors_output")
+@click.option('--out_dir', type=click.Path(), default="./authorship_pairings_output_train")
 @click.option('--shard', default='train', type=str)
 @click.option('--num_samples', default=100000, type=int)
 @click.option('--seed', default=42, type=int)

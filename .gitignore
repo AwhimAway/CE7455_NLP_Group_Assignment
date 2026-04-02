@@ -168,3 +168,7 @@ wandb/
 #.idea/
 MDU - reddit1m.tar.gz
 models/LUAR.pth
+processed_data_stage1/val.jsonl
+processed_data_stage1/test.jsonl
+processed_data_stage1/train.jsonl
+data/RedditMUD/data.jsonl

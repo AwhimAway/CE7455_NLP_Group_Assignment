@@ -6,7 +6,7 @@ set -ex
 # Once the data is downloaded and extracted, rename it to data.jsonl and store it in the data folder
 
 # If you have another dataset, please specify the path to the data folder here
-DATAFOLDER='example_authorship_dataset' # Path to the folder where the data is stored
+DATAFOLDER='./data/RedditMUD' # Path to the folder where the data is stored
 if [ -z "$DATAFOLDER" ]
 then
       echo "Please specify a location where the downloaded enron data is located."

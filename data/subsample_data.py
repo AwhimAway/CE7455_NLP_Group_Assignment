@@ -9,9 +9,9 @@ import os
 
 
 @click.command()
-@click.option('--path', type=str, required=True, help='path to jsonl file')
+@click.option('--path', type=str, required=True, default ="./data/RedditMUD/data.jsonl",help='path to jsonl file')
 @click.option(
-    '--author_splits_path', type=str, required=True, help='path to author splits'
+    '--author_splits_path', type=str, default="./processed_data_stage1/author_splits.json", required=True, help='path to author splits'
 )
 @click.option(
     '--per_author', type=int, default=10, help='max number of comments per author'
