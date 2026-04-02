@@ -56,7 +56,7 @@ def get_response(
 
 
 @click.command()
-@click.option('--in_dir', type=str, required=True, default= "./processed_data_stage1/split_files",help='path to files')
+@click.option('--in_dir', type=str, required=True, default= "./processed_data_stage1/split_files_subset",help='path to files')
 @click.option('--out_dir', type=str, required=True, default="./processed_data_stage1/parapharased_files_stage1", help='path to files')
 @click.option('--temp', type=float, default=1.5, help='temperature')
 @click.option('--top_p', type=float, default=0.8, help='top p')
