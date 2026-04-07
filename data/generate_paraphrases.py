@@ -56,17 +56,17 @@ def get_response(
 
 
 @click.command()
-@click.option('--in_dir', type=str, required=True, default= "./processed_data_stage1/split_files_subset",help='path to files')
-@click.option('--out_dir', type=str, required=True, default="./processed_data_stage1/parapharased_files_stage1", help='path to files')
+@click.option('--in_dir', type=str, required=True, default= "./processed_data_stage2/authorship_pairings/transfers_for_finetune/split_files",help='path to files')
+@click.option('--out_dir', type=str, required=True, default="./processed_data_stage2/authorship_pairings/transfers_for_finetune/parapharased_files_stage2", help='path to files')
 @click.option('--temp', type=float, default=1.5, help='temperature')
 @click.option('--top_p', type=float, default=0.8, help='top p')
 @click.option('--idx', type=int, default=0, help='idx')
 @click.option('--num_workers', type=int, default=1, help='total workers')
-@click.option('--batch_size', type=int, default=32, help='batch size')
+@click.option('--batch_size', type=int, default=16, help='batch size')
 @click.option('--max_input_length', type=int, default=60, help='max input length')
 @click.option('--max_output_length', type=int, default=60, help='max output length')
 @click.option(
-    '--num_return_sequences', type=int, default=1, help='num return sequences'
+    '--num_return_sequences', type=int, default=5, help='num return sequences'
 )
 def main(
     in_dir,

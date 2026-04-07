@@ -121,7 +121,7 @@ def run_model(*, batch, model, device, style_embed):
 @click.option('--learning_rate', type=float, default=1e-5)
 @click.option('--batch_size', type=int, default=64)
 @click.option('--accumulation_steps', type=int, default=1)
-@click.option('--out_dir', type=str, required=True, default="./model_training_output") #
+@click.option('--out_dir', type=str, required=True, default="./stage_1_recon_model_data") #
 @click.option('--device', type=str, default='cuda')
 @click.option('--warmup_steps', type=int, default=2000)
 @click.option('--max_steps', type=int, default=10000000)
@@ -129,8 +129,8 @@ def run_model(*, batch, model, device, style_embed):
 @click.option('--eval_freq', type=int, default=1000)
 @click.option('--ctrl_embed_dim', type=int, default=768)
 @click.option('--style_embed', type=str, default='style_embedding')
-@click.option('--model_name', type=str, default='t5-large') # 
-@click.option('--data_file_path', type=str, required=True, default="./data/RedditMUD/data.jsonl") #
+@click.option('--model_name', type=str, default='t5-small') # 
+@click.option('--data_file_path', type=str, required=True, default="./processed_data_stage1/dataset_format_20Train/authorship_data_with_style_embeds_AnnaWegmann_Style-Embedding") #
 @click.option('--checkpoint', type=str, default=None)
 @click.option('--seed', type=int, default=42)
 @click.option('--max_encoder_len', type=int, default=80)
@@ -225,7 +225,7 @@ def main(
     for index in random.sample(range(len(train_dataset)), 3):
         print(f"Sample {index} of the training set: {train_dataset[index]}.")
 
-    if MODEL_TO_MODEL_TYPE[model_name] == 't5':
+    if MODEL_TO_MODEL_TYPE[model_name] == 't5' or 't5-small':
         collator_fn = data_collator
     else:
         raise NotImplementedError

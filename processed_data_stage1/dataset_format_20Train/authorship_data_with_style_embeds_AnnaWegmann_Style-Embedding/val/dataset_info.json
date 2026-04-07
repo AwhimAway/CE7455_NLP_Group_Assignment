@@ -1,0 +1,232 @@
+{
+  "builder_name": "json",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "json",
+  "dataset_size": 280084439,
+  "description": "",
+  "download_checksums": {
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/train_1050000_paraphrased.jsonl": {
+      "num_bytes": 8176680,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/train_1400000_paraphrased.jsonl": {
+      "num_bytes": 8217779,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/train_1800000_paraphrased.jsonl": {
+      "num_bytes": 8205893,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/train_2000000_paraphrased.jsonl": {
+      "num_bytes": 8231903,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/train_3050000_paraphrased.jsonl": {
+      "num_bytes": 8230883,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/train_3250000_paraphrased.jsonl": {
+      "num_bytes": 8213402,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/train_3400000_paraphrased.jsonl": {
+      "num_bytes": 8174349,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/train_3750000_paraphrased.jsonl": {
+      "num_bytes": 8261583,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/train_4150000_paraphrased.jsonl": {
+      "num_bytes": 8194646,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/train_4300000_paraphrased.jsonl": {
+      "num_bytes": 8265931,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/train_4450000_paraphrased.jsonl": {
+      "num_bytes": 8175027,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/train_4750000_paraphrased.jsonl": {
+      "num_bytes": 8215684,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/train_5100000_paraphrased.jsonl": {
+      "num_bytes": 8229193,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/train_5450000_paraphrased.jsonl": {
+      "num_bytes": 8271289,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/train_5600000_paraphrased.jsonl": {
+      "num_bytes": 8209662,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/train_5800000_paraphrased.jsonl": {
+      "num_bytes": 8250186,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/train_6200000_paraphrased.jsonl": {
+      "num_bytes": 8245822,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/train_6450000_paraphrased.jsonl": {
+      "num_bytes": 8214648,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/train_6900000_paraphrased.jsonl": {
+      "num_bytes": 8236469,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/train_7200000_paraphrased.jsonl": {
+      "num_bytes": 8247628,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/val_100000_paraphrased.jsonl": {
+      "num_bytes": 8258896,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/val_150000_paraphrased.jsonl": {
+      "num_bytes": 8247577,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/val_200000_paraphrased.jsonl": {
+      "num_bytes": 8240183,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/val_250000_paraphrased.jsonl": {
+      "num_bytes": 8217005,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/val_300000_paraphrased.jsonl": {
+      "num_bytes": 8255790,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/val_350000_paraphrased.jsonl": {
+      "num_bytes": 8266310,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/val_400000_paraphrased.jsonl": {
+      "num_bytes": 8264687,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/val_450000_paraphrased.jsonl": {
+      "num_bytes": 8179215,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/val_500000_paraphrased.jsonl": {
+      "num_bytes": 8202510,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/val_50000_paraphrased.jsonl": {
+      "num_bytes": 8200828,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/val_535730_paraphrased.jsonl": {
+      "num_bytes": 5841344,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/test_100000_paraphrased.jsonl": {
+      "num_bytes": 8249087,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/test_150000_paraphrased.jsonl": {
+      "num_bytes": 8200741,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/test_200000_paraphrased.jsonl": {
+      "num_bytes": 8219107,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/test_250000_paraphrased.jsonl": {
+      "num_bytes": 8231074,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/test_300000_paraphrased.jsonl": {
+      "num_bytes": 8208220,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/test_350000_paraphrased.jsonl": {
+      "num_bytes": 8193352,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/test_400000_paraphrased.jsonl": {
+      "num_bytes": 8250278,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/test_450000_paraphrased.jsonl": {
+      "num_bytes": 8199753,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/test_500000_paraphrased.jsonl": {
+      "num_bytes": 8214657,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/test_50000_paraphrased.jsonl": {
+      "num_bytes": 8140726,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5/test_535730_paraphrased.jsonl": {
+      "num_bytes": 5856479,
+      "checksum": null
+    }
+  },
+  "download_size": 340606476,
+  "features": {
+    "author_id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "text": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "paraphrase": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "List"
+    },
+    "style_embedding": {
+      "feature": {
+        "dtype": "float32",
+        "_type": "Value"
+      },
+      "_type": "List"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 620690915,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 135264199,
+      "num_examples": 814761,
+      "dataset_name": "json"
+    },
+    "val": {
+      "name": "val",
+      "num_bytes": 72509878,
+      "num_examples": 436819,
+      "dataset_name": "json"
+    },
+    "test": {
+      "name": "test",
+      "num_bytes": 72310362,
+      "num_examples": 436658,
+      "dataset_name": "json"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

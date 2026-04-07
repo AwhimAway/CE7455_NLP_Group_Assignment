@@ -11,9 +11,9 @@ def write_lines(lines, out_path):
 
 
 @click.command()
-@click.option('--dir', type=str, required=True, default="./processed_data_stage1",help='path to jsonl files')
+@click.option('--dir', type=str, required=True, default="./processed_data_stage2/authorship_pairings_20Train/transfers_for_finetune",help='path to jsonl files')
 @click.option(
-    '--max_per_file', type=int, default=50000, help='max number of authors per file'
+    '--max_per_file', type=int, default=5000, help='max number of authors per file'
 )
 def main(dir, max_per_file):
     random.seed(42)
