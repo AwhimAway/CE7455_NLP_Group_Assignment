@@ -59,8 +59,8 @@ def mis_compute(a_texts, b_texts):
     global mis
 
     if mis is None:
-        mis = MIS(device="cuda")
-
+        mis = MIS(device="cuda:0")
+    
     scores = mis.compute(a_texts, b_texts)
     for idx, (score, a_text, b_text) in enumerate(zip(scores, a_texts, b_texts)):
         if a_text == b_text:

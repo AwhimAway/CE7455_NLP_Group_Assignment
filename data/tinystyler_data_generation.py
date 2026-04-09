@@ -16,8 +16,17 @@ from tinystyler import load_style_model, text_to_style
 
 import sys
 
-sys.path.append('../authorship_evaluation')
-from tinystyler_authorship import perform_authorship_transfer
+import importlib.util
+
+module_path = r"C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/authorship_evaluation/tinystyler_authorship.py"
+
+spec = importlib.util.spec_from_file_location("tinystyler_authorship", module_path)
+module = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(module)
+perform_authorship_transfer = module.perform_authorship_transfer
+
+# sys.path.append('../authorship_evaluation')
+# from tinystyler_authorship import perform_authorship_transfer
 
 
 def generate_tasks(*, paraphrased_data, target_authors_to_texts):
@@ -75,14 +84,14 @@ def get_task_data(args, file_path):
 @click.command()
 @click.option('--worker_idx', type=int, default=0)
 @click.option('--num_workers', type=int, default=1)
-@click.option('--transfer_data_dir', type=str, required=True)
-@click.option('--checkpoint_path', type=str, required=True)
+@click.option('--transfer_data_dir', type=str, required=True, default="./processed_data_stage2/authorship_pairings")
+@click.option('--checkpoint_path', type=str, required=True, default="./stage_1_recon_model_data/2026-04-04-16.09.15/best_model_t5-small_1e-05_64.pt")
 def main(worker_idx, num_workers, transfer_data_dir, checkpoint_path):
     random.seed(42)
 
     args = {
         'transfer_args': {
-            'base_model': 'google/t5-v1_1-large',
+            'base_model': "t5-small",#'google/t5-v1_1-large',
             'device': 'cuda',
             'embed_selection': 'mean',
             'mean_sample': list(range(4, 9)),  # set this up to be between 4 and 8
@@ -101,7 +110,7 @@ def main(worker_idx, num_workers, transfer_data_dir, checkpoint_path):
         'data_args': {
             'device': 'cuda',
             'paraphrased_dir': transfer_data_dir
-            + '/transfers_for_finetune/paraphrased_files/topp0.8_tmp1.5',
+            + '/transfers_for_finetune/paraphrased_files_stage2/topp0.8_tmp1.5',
             'target_author_texts': transfer_data_dir
             + '/texts_by_author_for_finetune.json',
         },

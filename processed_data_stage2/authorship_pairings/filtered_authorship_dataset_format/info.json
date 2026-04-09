@@ -1,0 +1,1 @@
+{"name": "authorship_data", "train": 7853, "val": 414, "test": 414, "train_paths": ["./processed_data_stage2/authorship_pairings/filtered_authorship_pairings/train_val_split\\train.jsonl"], "val_paths": ["./processed_data_stage2/authorship_pairings/filtered_authorship_pairings/train_val_split\\val.jsonl"], "test_paths": [], "date": "2026-04-08-00.37.44"}

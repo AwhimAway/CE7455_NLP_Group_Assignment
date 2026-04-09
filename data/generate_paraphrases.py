@@ -56,8 +56,8 @@ def get_response(
 
 
 @click.command()
-@click.option('--in_dir', type=str, required=True, default= "./processed_data_stage2/authorship_pairings/transfers_for_finetune/split_files",help='path to files')
-@click.option('--out_dir', type=str, required=True, default="./processed_data_stage2/authorship_pairings/transfers_for_finetune/parapharased_files_stage2", help='path to files')
+@click.option('--in_dir', type=str, required=True, default= "./processed_data_stage2/authorship_pairings_20Train/transfers_for_finetune/split_files",help='path to files')
+@click.option('--out_dir', type=str, required=True, default="./processed_data_stage2/authorship_pairings_20Train/transfers_for_finetune/paraphrased_files_stage2", help='path to files')
 @click.option('--temp', type=float, default=1.5, help='temperature')
 @click.option('--top_p', type=float, default=0.8, help='top p')
 @click.option('--idx', type=int, default=0, help='idx')

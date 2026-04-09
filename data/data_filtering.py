@@ -276,7 +276,7 @@ def process_file(*, path, out_dir, do_cache, author_to_texts):
         num_remaining = filter_based_on_model_score(
             tasks,
             threshold=MIS_SIM_THRESHOLD,
-            model_fn=lambda refs, cands: mis_compute(refs, cands),
+            model_fn=lambda refs, cands: mis_alternative_compute(refs, cands),
         )
         print(f'\tRemaining samples: {num_remaining}/{initial_samples}')
         print()
@@ -363,7 +363,7 @@ def process_file(*, path, out_dir, do_cache, author_to_texts):
 
 
 @click.command()
-@click.option('--in_dir', type=str, required=True)
+@click.option('--in_dir', type=str, required=True, default ="./processed_data_stage2/authorship_pairings")
 @click.option('--do_cache', is_flag=True)
 @click.option('--worker_idx', type=int, default=0)
 @click.option('--num_workers', type=int, default=1)
@@ -403,6 +403,7 @@ def main(in_dir, do_cache, worker_idx, num_workers, do_sample):
             do_cache=do_cache,
             author_to_texts=author_to_texts,
         )
+
 
 
 if __name__ == '__main__':

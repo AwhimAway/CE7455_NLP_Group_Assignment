@@ -1,0 +1,96 @@
+{
+  "builder_name": "json",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "json",
+  "dataset_size": 21054261,
+  "description": "",
+  "download_checksums": {
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage2/authorship_pairings/filtered_authorship_pairings/train_val_split/train.jsonl": {
+      "num_bytes": 20746004,
+      "checksum": null
+    },
+    "C:/Users/Dragby/Desktop/VS Code SSD Workspace/CE7455_NLP_Group_Assignment/./processed_data_stage2/authorship_pairings/filtered_authorship_pairings/train_val_split/val.jsonl": {
+      "num_bytes": 1047510,
+      "checksum": null
+    }
+  },
+  "download_size": 21793514,
+  "features": {
+    "source_author": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "source_text": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "target_author": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "source_paraphrase": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "List"
+    },
+    "target_author_texts": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "List"
+    },
+    "output": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "sim_1": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "sim_2": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "away_scores": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "towards_scores": {
+      "dtype": "float64",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 42847775,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 19130121,
+      "num_examples": 7853,
+      "dataset_name": "json"
+    },
+    "val": {
+      "name": "val",
+      "num_bytes": 962070,
+      "num_examples": 414,
+      "dataset_name": "json"
+    },
+    "test": {
+      "name": "test",
+      "num_bytes": 962070,
+      "num_examples": 414,
+      "dataset_name": "json"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

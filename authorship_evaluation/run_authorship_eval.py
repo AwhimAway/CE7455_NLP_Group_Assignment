@@ -28,15 +28,14 @@ def choose_best(
 
 
 @click.command()
-@click.option('--input_path', default = "./results_LARGE/diverse/experiment/2026-03-31_19-37-32/results.jsonl",help='path to input jsonl file', required=True)
-@click.option('--do_rerank', is_flag=True)
-@click.option('--rerank_alt_sim', is_flag=True)
+@click.option('--input_path', default = "./results_recon_SMALL/single/tinystyler_recon_eval/2026-04-08_22-05-19/results.jsonl",help='path to input jsonl file', required=True)
+@click.option('--do_rerank', is_flag=True, default=True)
+@click.option('--rerank_alt_sim', is_flag=True, default=True)
 @click.option(
-    '--is_chatgpt', is_flag=True
+    '--is_chatgpt', is_flag=True, default=False
 )  # changes inputs format. Also used for ParaGuide
 def main(input_path, do_rerank, rerank_alt_sim, is_chatgpt):
     input_path = input_path
-
     if do_rerank and not rerank_alt_sim:
         out_path = input_path.replace(".jsonl", "_reranked_scores.json")
     elif do_rerank and rerank_alt_sim:

@@ -11,7 +11,7 @@ import math
 
 
 @click.command()
-@click.option('--in_dir', help='where file paths are.')
+@click.option('--in_dir',default="./processed_data_stage2/authorship_pairings/filtered_authorship_pairings", help='where file paths are.')
 @click.option(
     '--percent_val', default=0.05, help='percent of data to use for validation'
 )

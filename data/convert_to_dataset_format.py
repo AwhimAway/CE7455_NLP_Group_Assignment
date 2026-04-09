@@ -24,6 +24,7 @@ def make_dataset(*, train_paths, val_paths, test_paths):
     dataset = load_dataset(
         "json", data_files={"train": train_paths, "val": val_paths, "test": test_paths}
     )
+        
     return dataset
 
 
@@ -33,8 +34,8 @@ def save_info(path, info):
 
 
 @click.command()
-@click.option('--in_dir', default="./processed_data_stage1/parapharased_files_stage1_20Train/topp0.8_tmp1.5",help='where file paths are.')
-@click.option('--out_dir', default="./processed_data_stage1/dataset_format_20Train", help='out dir')
+@click.option('--in_dir', default="./processed_data_stage2/authorship_pairings/filtered_authorship_pairings/train_val_split",help='where file paths are.')
+@click.option('--out_dir', default="./processed_data_stage2/authorship_pairings/filtered_authorship_dataset_format", help='out dir')
 @click.option('--name', default='authorship_data', help='name of dataset')
 def main(in_dir, out_dir, name):
     disable_caching()
