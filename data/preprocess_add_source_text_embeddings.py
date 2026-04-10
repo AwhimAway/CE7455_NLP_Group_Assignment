@@ -30,7 +30,7 @@ def add_embeddings(*, example, style_tokenizer, style_model):
 
 
 @click.command()
-@click.option('--dataset_path', help='path_to_dataset', required=True, default="./processed_data_stage1/dataset_format_20Train/authorship_data")
+@click.option('--dataset_path', help='path_to_dataset', required=True, default="./processed_data_stage1/dataset_format/authorship_dataset")
 @click.option('--style_model_name', help='style model name', required=True, default="AnnaWegmann/Style-Embedding")
 def main(dataset_path, style_model_name):
     disable_caching()

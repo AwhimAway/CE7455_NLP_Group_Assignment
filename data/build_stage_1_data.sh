@@ -36,7 +36,7 @@ CUDA_VISIBLE_DEVICES=0 python generate_paraphrases.py --in_dir $DATAFOLDER/'proc
 wait # Wait for all workers to finish
 
 # 5) Convert data to the dataset format
-python convert_to_dataset_format_20Train.py --in_dir  $DATAFOLDER/'processed_data_stage1/paraphrased_files/topp0.8_tmp1.5' --out_dir $DATAFOLDER/'processed_data_stage1_stage1/dataset_format_20Train' --name authorship_dataset
+python convert_to_dataset_format_20Train.py --in_dir  $DATAFOLDER/'processed_data_stage1/paraphrased_files/topp0.8_tmp1.5' --out_dir $DATAFOLDER/'processed_data_stage1/dataset_format_20Train' --name authorship_dataset
 
 # 6) Preprocess the data to add Wegmann embeddings
 python preprocess_add_source_text_embeddings.py --dataset_path $DATAFOLDER/'processed_data_stage1/dataset_format_20Train/authorship_data --style_model_name "AnnaWegmann/Style-Embedding"

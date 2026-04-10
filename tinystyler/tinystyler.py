@@ -15,6 +15,7 @@ MODEL_TO_MODEL_TYPE = {
     'google/t5-v1_1-large': 't5',
     't5-large': 't5',
     't5-small': 't5-small',
+    't5-base' : 't5-base',
 }
 
 
@@ -22,7 +23,7 @@ class TinyStyler(torch.nn.Module):
     def __init__(self, base_model, use_style=False, ctrl_embed_dim=768):
         super().__init__()
 
-        if MODEL_TO_MODEL_TYPE[base_model] == 't5' or 't5-small':
+        if MODEL_TO_MODEL_TYPE[base_model] == 't5' or 't5-small' or 't5-base':
             self.model = T5ForConditionalGeneration.from_pretrained(base_model)
         else:
             assert False
