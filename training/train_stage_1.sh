@@ -5,10 +5,10 @@
 set -ex
 
 # First run data/build_stage_1_data.sh to generate the data in the correct format
-PATH_TO_PARAPHRASE_DATASET='../data/example_authorship_dataset/processed_data/dataset_format/authorship_dataset_with_style_embeds_AnnaWegmann_Style-Embedding/'
-OUT_DIR='stage_1_recon_model_data'
+PATH_TO_PARAPHRASE_DATASET='./processed_data_stage1/dataset_format/authorship_dataset_with_style_embeds_AnnaWegmann_Style-Embedding'
+OUT_DIR='stage_1_recon_model_data/full_data_base_model'
 
-export CUDA_VISIBLE_DEVICES=0
+export CUDA_VISIBLE_DEVICES=0,1
 accelerate launch \
 --num_processes 1 \
 --num_machines 1 \
@@ -28,5 +28,5 @@ train.py \
 --max_encoder_len 80 \
 --max_decoder_len 80 \
 --max_val_batch 200 \
---model_name google/t5-v1_1-large
+--model_name t5-base
 
