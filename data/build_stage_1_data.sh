@@ -1,20 +1,20 @@
-# #!/bin/sh
-# set -ex
-# # Data from Million Reddit User Dataset (MUD) https://arxiv.org/abs/2105.07263
-# # Access form: https://docs.google.com/forms/d/e/1FAIpQLSesc-0HI2DRYjFqlpPo2hTh9OJ53jtWjYQiIfAtmzSVUCxiLA/viewform
+#!/bin/sh
+set -ex
+# Data from Million Reddit User Dataset (MUD) https://arxiv.org/abs/2105.07263
+# Access form: https://docs.google.com/forms/d/e/1FAIpQLSesc-0HI2DRYjFqlpPo2hTh9OJ53jtWjYQiIfAtmzSVUCxiLA/viewform
 
-# # Once the data is downloaded and extracted, rename it to data.jsonl and store it in the data folder
+# Once the data is downloaded and extracted, rename it to data.jsonl and store it in the data folder
 
-# # If you have another dataset, please specify the path to the data folder here
-# DATAFOLDER='./data/RedditMUD' # Path to the folder where the data is stored
-# if [ -z "$DATAFOLDER" ]
-# then
-#       echo "Please specify a location where the downloaded enron data is located."
-# 	  exit 1
-# fi
+# If you have another dataset, please specify the path to the data folder here
+DATAFOLDER='./data/RedditMUD' # Path to the folder where the data is stored
+if [ -z "$DATAFOLDER" ]
+then
+      echo "Please specify a location where the downloaded enron data is located."
+	  exit 1
+fi
 
-# # Expected path to the data
-# PATH_TO_MUD_JSONL=$DATAFOLDER/'data.jsonl'
+# Expected path to the data
+PATH_TO_MUD_JSONL=$DATAFOLDER/'data.jsonl'
 
 # # 1) Split into train, val, test, ensure that protected authors are not in the train set
 # python split_authors.py --path $DATAFOLDER/'data.jsonl' --out_dir $DATAFOLDER/'processed_data_stage1' --protected_authors_path 'styll_evaluation_data/protected_authors.txt'
