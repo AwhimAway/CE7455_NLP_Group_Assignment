@@ -389,12 +389,12 @@ def perform_authorship_transfer(
 
 
 @click.command()
-@click.option('--styll_dataset_shard', default='single' ,type=str, required=True)
+@click.option('--styll_dataset_shard', default='random' ,type=str, required=True)
 #doing recon first (Trained on 20 random train batches)
-@click.option('--model_checkpoint_path', default="./stage_1_recon_model_data/2026-04-04-16.09.15/best_model_t5-small_1e-05_64.pt", type=str, required=True)
-@click.option('--output_dir', type=str, default='results_recon_SMALL') #
-@click.option('--use_actual_input', type=bool, default=False)
-@click.option('--experiment_name', type=str, default='tinystyler_recon_eval')
+@click.option('--model_checkpoint_path', default="./stage_3_self_distill_model_data_efficient_base/2026-04-13-11.28.08/best_model_google_t5-efficient-base_1e-05_64.pt", type=str, required=True)
+@click.option('--output_dir', type=str, default='./results_ft_efficient_base') #
+@click.option('--use_actual_input', type=bool, default=True)
+@click.option('--experiment_name', type=str, default='tinystyler_ft_efficient_base_eval')
 def main(
     styll_dataset_shard,
     model_checkpoint_path,
@@ -408,7 +408,7 @@ def main(
 
     args = {
         'transfer_args': {
-            'base_model': 't5-small', #'google/t5-v1_1-large',
+            'base_model': 'google/t5-efficient-base', #'google/t5-v1_1-large',
             'device': 'cuda',
             'embed_selection': 'mean',  # mean over mean sample
             'mean_sample': 8,

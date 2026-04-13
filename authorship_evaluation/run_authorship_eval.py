@@ -28,7 +28,7 @@ def choose_best(
 
 
 @click.command()
-@click.option('--input_path', default = "./results_recon_SMALL/single/tinystyler_recon_eval/2026-04-08_22-05-19/results.jsonl",help='path to input jsonl file', required=True)
+@click.option('--input_path', default = "./results_ft_efficient_base/single/tinystyler_ft_efficient_base_eval/2026-04-13_18-36-04/results.jsonl",help='path to input jsonl file', required=True)
 @click.option('--do_rerank', is_flag=True, default=True)
 @click.option('--rerank_alt_sim', is_flag=True, default=True)
 @click.option(

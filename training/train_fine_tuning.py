@@ -121,7 +121,7 @@ def run_model(*, batch, model, device, style_embed):
 @click.option('--learning_rate', type=float, default=1e-5)
 @click.option('--batch_size', type=int, default=16)
 @click.option('--accumulation_steps', type=int, default=4)
-@click.option('--out_dir', type=str, required=True, default="./stage_3_self_distill_model_data") #
+@click.option('--out_dir', type=str, required=True, default="./stage_3_self_distill_model_data_efficient_base") #
 @click.option('--device', type=str, default='cuda')
 @click.option('--warmup_steps', type=int, default=0)
 @click.option('--max_steps', type=int, default=10000000)
@@ -129,9 +129,9 @@ def run_model(*, batch, model, device, style_embed):
 @click.option('--eval_freq', type=int, default=500)
 @click.option('--ctrl_embed_dim', type=int, default=768)
 @click.option('--style_embed', type=str, default='style_embedding')
-@click.option('--model_name', type=str, default='t5-small') # 
+@click.option('--model_name', type=str, default='google/t5-efficient-base') # 
 @click.option('--data_file_path', type=str, required=True, default="./processed_data_stage2/authorship_pairings/filtered_authorship_dataset_format/authorship_data_with_style_embeds_AnnaWegmann_Style-Embedding") #
-@click.option('--checkpoint', type=str, default="./stage_1_recon_model_data/2026-04-04-16.09.15/best_model_t5-small_1e-05_64.pt")
+@click.option('--checkpoint', type=str, default="./stage_1_recon_model_data/full_data_base_model_eff-base_LORA/2026-04-11-20.04.01/best_model_google_t5-efficient-base_1e-05_64.pt")
 @click.option('--seed', type=int, default=42)
 @click.option('--max_encoder_len', type=int, default=80)
 @click.option('--max_decoder_len', type=int, default=80)

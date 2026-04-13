@@ -119,8 +119,8 @@ def run_model(*, batch, model, device, style_embed):
 
 @click.command()
 @click.option('--learning_rate', type=float, default=1e-5)
-@click.option('--batch_size', type=int, default=64)
-@click.option('--accumulation_steps', type=int, default=1)
+@click.option('--batch_size', type=int, default=16)
+@click.option('--accumulation_steps', type=int, default=4)
 @click.option('--out_dir', type=str, required=True, default="./stage_1_recon_model_data/full_data_base_model") #
 @click.option('--device', type=str, default='cuda')
 @click.option('--warmup_steps', type=int, default=2000)

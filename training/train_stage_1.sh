@@ -10,7 +10,7 @@ OUT_DIR='stage_1_recon_model_data/full_data_base_model'
 
 export CUDA_VISIBLE_DEVICES=0,1
 accelerate launch \
---num_processes 1 \
+--num_processes 2 \
 --num_machines 1 \
 --mixed_precision no \
 --dynamo_backend no \
@@ -28,5 +28,5 @@ train.py \
 --max_encoder_len 80 \
 --max_decoder_len 80 \
 --max_val_batch 200 \
---model_name t5-base
+--model_name google/t5-efficient-base
 
