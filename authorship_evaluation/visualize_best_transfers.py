@@ -4,11 +4,11 @@ from pathlib import Path
 # ==========================================
 # 1. SET YOUR FILE PATHS HERE
 # ==========================================
-RESULTS_DIR = r"C:\Users\Andrew\Desktop\tinystyler\authorship_evaluation\results\diverse\stage3_distilled\YOUR_TIMESTAMP_HERE"
+RESULTS_DIR = r"C:\Users\Dragby\Desktop\VS Code SSD Workspace\CE7455_NLP_Group_Assignment\results_ft_SMALL\diverse\tinystyler_ft_eval\2026-04-08_20-41-31"
 
 RESULTS_JSONL = Path(RESULTS_DIR) / "results.jsonl"
-SCORES_JSON = Path(RESULTS_DIR) / "results_scores.json"
-
+SCORES_JSON = Path(RESULTS_DIR) / "results_scores.json-just-first_5"
+    
 def load_data():
     candidates_list = []
     
